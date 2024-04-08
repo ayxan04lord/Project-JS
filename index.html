@@ -1,0 +1,43 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Tracker</title>
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <section class="section">
+        <div class="todo__container">
+            <div class="todo__top-border"></div>
+            <div class="todo__body">
+                <div class="todo__title-block">
+                    <p class="todo__title">To-do list</p>
+                </div>
+                <div class="todo__control-block" id="todo-sort">
+                    <i class="fa-solid fa-arrow-down-short-wide"></i>
+                </div>
+                <div class="todo__block" id="todo_list">
+                    <div class="todo__item">
+                        <input class="todo__item-input" type="text" name="backend_name[]"
+                            placeholder="Please enter todo item">
+                        <i class="fa-solid fa-xmark"></i>
+                    </div>
+                </div>
+                <div class="todo__create-block">
+                    <button type="button" class="todo__create-btn" id="todo_add">Добавить</button>
+                </div>
+            </div>
+        </div>
+    </section>
+   
+    <script src="js/fa.js"></script>
+    <script src="js/sweetalert2.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

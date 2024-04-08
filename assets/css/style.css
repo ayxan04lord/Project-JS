@@ -1,0 +1,211 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+*,
+*::before,
+*::after {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #FFFFFF;
+    font-family: "Roboto";
+}
+
+.section {
+    width: 100%;
+    height: 100dvh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFFFFF;
+    scroll-snap-align: start;
+}
+
+.todo__container {
+    width: 336px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #C4C4C4;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.todo__top-border {
+    width: 100%;
+    height: 28px;
+    background-color: #FFDC40;
+}
+
+.todo__body {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 13px 28px;
+}
+
+.todo__title {
+    font-size: 26px;
+    font-weight: 900;
+    line-height: 30.47px;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.todo__control-block {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    margin-bottom: 8px;
+    margin-top: 12px;
+}
+
+.todo__control-block>i {
+    font-size: 22px;
+    color: #C4C4C4;
+    transition: color 128ms linear;
+    cursor: pointer;
+}
+
+.todo__control-block>i:hover {
+    color: #000000;
+}
+
+.todo__block {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.todo__item {
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 16px;
+}
+
+.todo__item-input {
+    outline: none;
+    border: 1px solid #C4C4C4;
+    border-radius: 10px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16.41px;
+    padding: 8px 60px 8px 20px;
+}
+
+.todo__item>i {
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #C4C4C4;
+    border-radius: 50%;
+    color: #C4C4C4;
+    transition: background-color 128ms linear, border-color 128ms linear, color 128ms linear;
+    cursor: pointer;
+}
+
+.todo__item>i:hover {
+    background-color: #833AE0;
+    border-color: #833AE0;
+    color: #FFFFFF;
+}
+
+
+
+
+
+.todo__create-btn {
+    position: relative;
+    width: 150px;
+    height: 42px;
+    background-color: #833AE0;
+    outline: none;
+    border: none;
+    border-radius: 71px;
+    color: #FFFFFF;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16.41px;
+    padding: 8px 8px 8px 42px;
+    overflow: hidden;
+    transition: background-color 128ms linear;
+    cursor: pointer;
+}
+
+.todo__create-btn::before {
+    content: "\2b";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 42px;
+    height: 42px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #9953F1;
+    border-radius: 50%;
+    transition: background-color 128ms linear;
+}
+
+.todo__create-btn:hover {
+    background-color: #9953F1;
+}
+
+.todo__create-btn:hover::before {
+    background-color: #AA68FE;
+}
+
+.author {
+    background-color: #000000;
+
+}
+
+.author__link {
+    font-size: 64px;
+    font-weight: 900;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 24px;
+    color: #00AA00;
+    animation: spring 2s linear infinite alternate forwards;
+}
+
+@keyframes spring {
+    from {
+        letter-spacing: 24px;
+    }
+
+    to {
+        letter-spacing: 22px;
+    }
+}
